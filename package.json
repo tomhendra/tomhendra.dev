@@ -4,15 +4,15 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm validate && vite build",
+    "build": "bun validate && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "pnpm lint --fix",
+    "lint:fix": "bun lint --fix",
     "format": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|ts|tsx|md)\"",
-    "format:fix": "pnpm format --write \"**/*.+(js|jsx|ts|tsx|md)\"",
-    "format:check": "pnpm format --list-different",
-    "validate": "pnpm run \"/^(lint|format:check)$/\"",
-    "postinstall": "pnpm husky",
+    "format:fix": "bun format --write \"**/*.+(js|jsx|ts|tsx|md)\"",
+    "format:check": "bun format --list-different",
+    "validate": "bun run \"/^(lint|format:check)$/\"",
+    "postinstall": "bun husky",
     "clean:node_modules": "rm -rf node_modules"
   },
   "lint-staged": {
