@@ -17,7 +17,7 @@ ENV NODE_ENV="production"
 FROM base as build
 
 # Install node modules
-COPY package.json bun.lockb ./
+COPY package.json bun.lock ./
 RUN bun install --frozen-lockfile
 
 # Copy application code
